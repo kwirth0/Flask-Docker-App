@@ -2,7 +2,7 @@
 
 FROM python:3.9.2
 
-WORKDIR python-docker
+WORKDIR /python-docker
 
 COPY requirements.txt requirements.txt
 
