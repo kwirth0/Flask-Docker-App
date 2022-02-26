@@ -18,6 +18,7 @@ jobs:
       # run something 
       - name: build docker 
         run: |
+          pip install pytest
           docker build --tag python-docker . -f tests/Dockerfile
           docker images
           docker run -d -p 5000:5000 python-docker
