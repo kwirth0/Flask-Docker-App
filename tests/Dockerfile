@@ -12,4 +12,4 @@ COPY . .
 
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 
-CMD [ "pytest"]
+CMD [ "python3", "test_page_status.py"]
