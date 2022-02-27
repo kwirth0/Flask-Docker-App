@@ -5,6 +5,6 @@ def unprotected_page_status():
     return page.status_code
 
 def testing():
-    assert unprotected_page_status() == 200
+    assert unprotected_page_status() == 400
 
 testing()
