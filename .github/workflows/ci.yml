@@ -19,8 +19,8 @@ jobs:
       - name: build docker 
         run: |
           pip install pytest
-          docker build --tag python-docker . -f tests/Dockerfile
+          docker build --tag python-docker . -f tests/Dockerfile --name tester
           docker images
           docker run -d -p 5000:5000 python-docker
           docker ps  
-          pipenv run pytest /tests
+          pytest
